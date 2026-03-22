@@ -169,3 +169,9 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
 .about ul {
     list-style-type: disc;    
 }
+
+.fade-bottom {
+  opacity: 0.2;                  /* nästan osynlig när den ligger under */
+  transform: translateY(30px);    /* start lite nedflyttad */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* mjuk fade + rörelse */
+}
