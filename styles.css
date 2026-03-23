@@ -175,15 +175,15 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
 }
 
 .fade-bottom {
-  opacity: 0.2;                  /* nästan osynlig när den ligger under */
-  transform: translateY(30px);    /* start lite nedflyttad */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* mjuk fade + rörelse */
+  opacity: 0.2;                  
+  transform: translateY(30px);    
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
 }
 
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem; /* avstånd mellan rutorna */
+    gap: 2rem; 
     padding: 4em;
     padding-top: 1.5em;
     margin-top: 4em;
@@ -199,6 +199,44 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     margin: 3em 0;
     width: 80%;
     gap: 2em;
+}
+.portfolio-item > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.portfolio-item h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ffeb99; 
+}
+
+.portfolio-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+.portfolio-item button.case-link,
+.portfolio-item button.video-link {
+    background: none;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    width: fit-content; 
+}
+
+.portfolio-item button.case-link:hover,
+.portfolio-item button.video-link:hover {
+    background-color: #ffb84d;
+    color: #12002f;
 }
 
 .portfolio-text {
@@ -218,9 +256,9 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     cursor: pointer;
 }
 
-/* Modal popup */
+
 .modal {
-    display: none; /* gömd tills klick */
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -231,7 +269,7 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     background-color: rgba(18,0,47,0.95);
     color: white;
     border-radius: 1rem;
-    overflow: hidden; /* ingen scroll i modal */
+    overflow: hidden;
     box-shadow: 0 0 2rem rgba(0,0,0,0.5);
     z-index: 1000;
 }
@@ -274,7 +312,7 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     transition: opacity 0.3s ease;
 }
 
-/* Close button */
+
 .close-btn {
     position: absolute;
     top: 1rem;
@@ -284,7 +322,7 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     color: #a14b00;
 }
 
-/* Vänster/höger pilar */
+
 .prev-btn, .next-btn {
     position: absolute;
     top: 50%;
@@ -313,9 +351,9 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     cursor: pointer;
 }
 
-/* Modal */
+
 #videoModal {
-    display: none;
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -329,7 +367,6 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     overflow: hidden;
     box-shadow: 0 0 2rem rgba(0,0,0,0.5);
     z-index: 1000;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -347,4 +384,208 @@ box-shadow:0 0 0.5rem rgba(0,0,0,0.3);
     font-size: 2rem;
     cursor: pointer;
     color: #a14b00;
+}
+
+.frontend-portfolio-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.frontend-portfolio-item {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    padding: 2rem; 
+    box-sizing: border-box;
+}
+
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 1.5rem;
+    border-radius: 8px;
+    gap: 0.5rem; 
+}
+
+.portfolio-text a {
+    text-decoration: none; 
+    color: #ffb84d; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.portfolio-text a:hover {
+    color: #ffa500; 
+}
+
+
+.portfolio-github {
+    text-align: center;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.portfolio-github h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    color: #ffeb99; 
+}
+
+.portfolio-github a {
+    text-decoration: none; 
+    color: #ffb84d; 
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-github a:hover {
+    background-color: #ffb84d;
+    color: #12002f; 
+}
+
+
+.diplomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.diploma-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.diploma-item h3 {
+    font-size: 1.5rem;
+    color: #ffeb99;
+    margin: 0;
+}
+
+.diploma-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+}
+
+.diploma-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+}
+
+.diploma-item button.diploma-link {
+    background: none;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.diploma-item button.diploma-link:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}
+
+.hero-name h1 {
+    font-size: 3rem;
+    color: #ffeb99;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-name p {
+    font-size: 1.5rem;
+    color: #ffeb99;
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+
+.portrait img {
+    width: 24rem;
+    height: 26rem;
+    object-fit: cover;
+    border-radius: 12rem;
+    border: 2px solid #ffb84d; 
+    box-shadow: 
+        0 0.5rem 1rem rgba(0,0,0,0.3),
+        0 1rem 2rem rgba(0,0,0,0.2);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+.portrait img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffb84d;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}
+
+.menu1, .menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hero-name a {
+    text-decoration: none;      
+    color: #ffb84d;              
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    display: block;              
+    margin-top: 0.5rem;          
+    width: fit-content;          
+    transition: all 0.3s ease;
+}
+
+.hero-name a:hover {
+    background-color: #ffb84d;
+    color: #12002f;
 }
