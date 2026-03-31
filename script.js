@@ -61,6 +61,53 @@ const caseStudies = {
   ]
 };
 
+const frontendProjects = {
+
+  "aGameObviously-code":[
+    "frontend_img/stopwatch/code1.png",
+    "frontend_img/stopwatch/code2.png"
+  ],
+
+  "aGameObviously-final":[
+    "frontend_img/stopwatch/final1.png",
+    "frontend_img/stopwatch/final2.png"
+  ],
+
+  "chappy-code":[
+    "frontend_img/webshop/code1.png",
+    "frontend_img/webshop/code2.png"
+  ],
+
+  "chappy-final":[
+    "frontend_img/webshop/final1.png",
+    "frontend_img/webshop/final2.png"
+  ],
+  "summertoy-code":[
+    "frontend_img/summertoy/code1.png",
+    "frontend_img/summertoy/code2.png"],
+    
+  "summertoy-final":[
+    "frontend_img/summertoy/final1.png",
+    "frontend_img/summertoy/final2.png"
+  ],
+  "stopwatch-code":[
+    "frontend_img/stopwatch/code1.png",
+    "frontend_img/stopwatch/code2.png"],
+
+  "stopwatch-final":[
+    "frontend_img/stopwatch/final1.png"],
+
+    "foodTruck-code":[
+      "frontend_img/foodtruck/code1.png",
+      "frontend_img/foodtruck/code2.png"
+    ],
+    "foodTruck-final":[
+      "frontend_img/foodtruck/final1.png",
+      "frontend_img/foodtruck/final2.png"
+    ],
+
+};
+
 let currentImages = [];
 let currentIndex = 0;
 
@@ -115,6 +162,35 @@ window.addEventListener('click', (e) => {
     modal.style.display = 'none';
     enableScroll();
   }
+});
+
+document.querySelectorAll('.frontend-link').forEach(button => {
+
+button.addEventListener('click', () => {
+
+const projectId = button.dataset.project;
+
+currentImages = frontendProjects[projectId];
+
+currentIndex = 0;
+
+modalImg.src = currentImages[currentIndex];
+
+modal.style.display = 'block';
+
+disableScroll();
+
+
+if(currentImages.length > 1){
+prevBtn.style.display = 'block';
+nextBtn.style.display = 'block';
+}else{
+prevBtn.style.display = 'none';
+nextBtn.style.display = 'none';
+}
+
+});
+
 });
 
 

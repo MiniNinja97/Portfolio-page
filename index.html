@@ -101,16 +101,19 @@
     <h2>UX/UI PORTFOLIO</h2>
 
     
-    <div class="portfolio-item">
-        <div class="">
-            <h3>InterCat</h3>
-            <p>Area: UX/UI design</p>
-            <p>Brief: .</p>
-            <button class="case-link" data-case="projectAlpha">See case study</button>
+    <div id="case-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+
+        <div class="case-body">
+            <img id="modal-img" src="" alt="Case Study Image">
         </div>
-        <div class="portfolio-image">
-            <img src="ux_img/Group 259.jpg" alt="Project InterCat thumbnail">
-        </div>
+    </div>
+</div>
     </div>
     <div class="portfolio-item">
     <div class="">
@@ -166,46 +169,151 @@
     <div class="portfolio-github">
     <h4>See my GitHub for all portfolio projects</h4>
     <a href="https://github.com/stars/MiniNinja97/lists/portfolio" target="_blank">My GitHub Portfolio List</a>
+    
 </div>
 
     <div class="frontend-portfolio-item">
   <div class="portfolio-text">
       <h3>A Game Obviously</h3>
       <p>Thesis project for my FrontEnd education. A text-based game played in the browser, built in Elixir using Phoenix, PubSub, and GenServer.</p>
-      <a href="https://github.com/MiniNinja97/A_Game_Obviously" target="_blank">View on GitHub</a>
+      <ul class="tech-list">
+  <li>Elixir</li>
+  <li>Phoenix</li>
+  <li>Phoenix PubSub</li>
+  <li>GenServer</li>
+  <li>MariaDB</li>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+      <a href="https://github.com/MiniNinja97/A_Game_Obviously" target="_blank">View this project on GitHub here!</a>
+      <div class="portfolio-buttons">
+
+<button class="frontend-link" data-project="aGameObiously-code">
+Code snippets
+</button>
+
+<button class="frontend-link" data-project="aGameObviously-final">
+Final product
+</button>
+
+</div>
       
   </div>
    <div class="portfolio-text">
       <h3>Chappy App</h3>
       <p>A web-based real-time chat app. Fullstack with TypeScript, React, Express, and AWS.</p>
-      <a href="https://github.com/MiniNinja97/chappy-app" target="_blank">View on GitHub</a>
+      <ul class="tech-list">
+  <li>TypeScript</li>
+  <li>React</li>
+  <li>Express</li>
+  <li>Node.js</li>
+  <li>WebSockets</li>
+  <li>AWS</li>
+</ul>
+      <a href="https://github.com/MiniNinja97/chappy-app" target="_blank">View this project on GitHub here!</a>
+      <div class="portfolio-buttons">
+
+<button class="frontend-link" data-project="chappy-code">
+Code snippets
+</button>
+
+<button class="frontend-link" data-project="chappy-final">
+Final product
+</button>
+
+</div>
+      <p>This project is deployed and the link can be found in the README file</p>
   </div>
    <div class="portfolio-text">
       <h3>Webshop Summer Toys</h3>
       <p>A responsive summer toy webshop built with React, Joi, HashRouter, Zustand, and Firestore as part of a school project.</p>
-      <a href="https://github.com/MiniNinja97/webshop-summer-toys" target="_blank">View on GitHub</a>
-      <p>Deployed project: <a href="https://minininja97.github.io/webshop-summer-toys/" target="_blank">View Live</a></p>
+      <ul class="tech-list">
+  <li>React</li>
+  <li>TypeScript</li>
+  <li>Zustand</li>
+  <li>Joi Validation</li>
+  <li>Firebase Firestore</li>
+  <li>Rest API</li>
+  <li>CSS</li>
+</ul>
+      <a href="https://github.com/MiniNinja97/webshop-summer-toys" target="_blank">View this project on GitHub here!</a>
+      <div class="portfolio-buttons">
+
+<button class="frontend-link" data-project="summertoy-code">
+Code snippets
+</button>
+
+<button class="frontend-link" data-project="summertoy-final">
+Final product
+</button>
+
+</div>
+      <p>This project is deployed and the link can be found in the README file</p>
+      
       
   </div>
    <div class="portfolio-text">
       <h3>Stopwatch with react</h3>
       <p>This is a simple stopwatch built with React that tracks elapsed time with start, stop and reset controls. It uses React hooks like useState, useEffect, and useRef to update the timer and ensure accurate real‑time tracking in the browser. The component formats and displays minutes, seconds and milliseconds for an interactive timekeeping experience.</p>
-      <a href="https://github.com/MiniNinja97/stopwatch-react" target="_blank">View on GitHub</a>
-      <p>Deployed project: <a href="https://minininja97.github.io/stopwatch-react/" target="_blank">View Live</a></p>
+      <ul class="tech-list">
+  <li>HTML</li>
+  <li>JavaScript</li>
+  <li>CSS</li>
+</ul>
+      <a href="https://github.com/MiniNinja97/stopwatch-react" target="_blank">View this project on GitHub here!</a>
+      <div class="portfolio-buttons">
+
+<button class="frontend-link" data-project="stopwatch-code">
+Code snippets
+</button>
+
+<button class="frontend-link" data-project="stopwatch-final">
+Final product
+</button>
+
+</div>
+      <p>This project is deployed and the link can be found in the README file</p>
+      
       
   </div>
    <div class="portfolio-text">
       <h3>Foodtruck web app</h3>
       <p>Area: UX/UI design</p>
-      <a href="https://github.com/MiniNinja97/Foodtruck-web-app" target="_blank">View on GitHub</a>
-      <p>Deployed project: <a href="https://minininja97.github.io/Foodtruck-web-app/" target="_blank">View Live</a></p>
+      <ul class="tech-list">
+  <li>UX/UI Design</li>
+  <li>Javascript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Rest API</li>
+ 
+</ul>
+      <a href="https://github.com/MiniNinja97/Foodtruck-web-app" target="_blank">View this project on GitHub here!</a>
+      <div class="portfolio-buttons">
+
+<button class="frontend-link" data-project="foodTruck-code">
+Code snippets
+</button>
+
+<button class="frontend-link" data-project="foodTruck-final">
+Final product
+</button>
+
+</div>
+      <p>This project is deployed and the link can be found in the README file</p>
+      
        
   </div>
    <div class="portfolio-text">
       <h3>Conference Website</h3>
       <p>Our first school project, where we got to try working with HTML and CSS for the first time. It was a simple introduction to building and styling web pages, helping us understand layout, structure, and basic design principles.</p>
-    <a href="https://github.com/MiniNinja97/Conference-website" target="_blank">View on GitHub</a>
-    <p>Deployed project: <a href="https://minininja97.github.io/Conference-website/ target="_blank">View Live</a></p>
+    <ul class="tech-list">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Responsive Design</li>
+</ul>
+      <a href="https://github.com/MiniNinja97/Conference-website" target="_blank">View this project on GitHub here!</a>
+      <p>This project is deployed and the link can be found in the README file</p>
+    
       
   </div>
   

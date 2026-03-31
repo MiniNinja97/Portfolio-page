@@ -415,7 +415,7 @@ border-radius: 50%;
 }
 
 .portfolio-text a {
-    text-decoration: none; 
+   
     color: #ffb84d; 
     font-weight: bold;
     transition: color 0.3s ease;
@@ -594,6 +594,57 @@ border-radius: 50%;
 .hero-name a:hover {
     background-color: #ffb84d;
     color: #12002f;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 1rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tech-list li {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+
+    border: 1px solid #ffb84d;
+    border-radius: 4px;
+
+    color: #ffeb99;
+    background: rgba(255, 184, 77, 0.08);
+
+    transition: all 0.2s ease;
+}
+
+.tech-list li:hover {
+    background: #ffb84d;
+    color: #12002f;
+}
+
+.portfolio-buttons{
+display:flex;
+gap:0.5rem;
+margin-top:0.5rem;
+flex-wrap:wrap;
+}
+
+.frontend-link{
+background:none;
+border:2px solid #ffb84d;
+border-radius:6px;
+color:#ffb84d;
+font-weight:bold;
+padding:0.4rem 0.8rem;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.frontend-link:hover{
+background:#ffb84d;
+color:#12002f;
 }
 
 @media (max-width: 768px) {
