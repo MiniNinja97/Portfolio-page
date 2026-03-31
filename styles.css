@@ -619,10 +619,10 @@ border-radius: 50%;
     transition: all 0.2s ease;
 }
 
-.tech-list li:hover {
+/* .tech-list li:hover {
     background: #ffb84d;
     color: #12002f;
-}
+} */
 
 .portfolio-buttons{
 display:flex;
