@@ -64,23 +64,52 @@ const caseStudies = {
 const frontendProjects = {
 
   "aGameObviously-code":[
-    "frontend_img/stopwatch/code1.png",
-    "frontend_img/stopwatch/code2.png"
+    "frontend_img/game/1.png",
+    "frontend_img/game/2.png",
+    "frontend_img/game/3.png",
+    "frontend_img/game/4.png",
+    "frontend_img/game/5.png",
+    "frontend_img/game/6.png",
+    "frontend_img/game/7.png",
+    "frontend_img/game/8.png",
+    "frontend_img/game/9.png",
+    "frontend_img/game/10.png",
+    "frontend_img/game/11.png",
+    "frontend_img/game/12.png",
+    "frontend_img/game/13.png",
+    "frontend_img/game/14.png",
+    "frontend_img/game/15.png",
+    
   ],
 
   "aGameObviously-final":[
-    "frontend_img/stopwatch/final1.png",
-    "frontend_img/stopwatch/final2.png"
+    "frontend_img/game/pic1.png",
+    "frontend_img/game/pic2.png",
+    "frontend_img/game/pic3.png",
+    "frontend_img/game/pic4.png",
+    "frontend_img/game/pic5.png",
+    "frontend_img/game/pic6.png",
+    
   ],
 
   "chappy-code":[
-    "frontend_img/webshop/code1.png",
-    "frontend_img/webshop/code2.png"
+    "frontend_img/chappy/1.png",
+    "frontend_img/chappy/2.png",
+    "frontend_img/chappy/3.png",
+    "frontend_img/chappy/4.png",
+    "frontend_img/chappy/5.png",
+    "frontend_img/chappy/6.png",
+    "frontend_img/chappy/7.png",
+    "frontend_img/chappy/8.png",
+    "frontend_img/chappy/9.png",
+    "frontend_img/chappy/10.png",
+    
   ],
 
   "chappy-final":[
-    "frontend_img/webshop/final1.png",
-    "frontend_img/webshop/final2.png"
+    "frontend_img/chappy/11.png",
+    "frontend_img/chappy/12.png",
+    "frontend_img/chappy/13.png",
   ],
   "summertoy-code":[
     "frontend_img/summertoys/pic_one.png",
@@ -99,19 +128,35 @@ const frontendProjects = {
     
   ],
   "stopwatch-code":[
-    "frontend_img/stopwatch/code1.png",
-    "frontend_img/stopwatch/code2.png"],
+    "frontend_img/stopwatch/stop_one.png",
+    "frontend_img/stopwatch/stop_two.png",
+    "frontend_img/stopwatch/stop_three.png",
+    "frontend_img/stopwatch/stop_four.png",
+    "frontend_img/stopwatch/stop_five.png",
+  ],
 
   "stopwatch-final":[
-    "frontend_img/stopwatch/final1.png"],
+    "frontend_img/stopwatch/stop_six.png",
+    "frontend_img/stopwatch/stop_seven.png",
+    
+  ],
 
     "foodTruck-code":[
-      "frontend_img/foodtruck/code1.png",
-      "frontend_img/foodtruck/code2.png"
+      "frontend_img/foodtruck/1.png",
+      "frontend_img/foodtruck/2.png",
+      "frontend_img/foodtruck/3.png",
+      "frontend_img/foodtruck/4.png",
+      "frontend_img/foodtruck/5.png",
+      "frontend_img/foodtruck/6.png",
+      "frontend_img/foodtruck/7.png",
+    
     ],
     "foodTruck-final":[
-      "frontend_img/foodtruck/final1.png",
-      "frontend_img/foodtruck/final2.png"
+      "frontend_img/foodtruck/foodone.png",
+      "frontend_img/foodtruck/foodtwo.png",
+      "frontend_img/foodtruck/foodthree.png",
+      "frontend_img/foodtruck/foodfour.png",
+      "frontend_img/foodtruck/foodfive.png",
     ],
 
 };
