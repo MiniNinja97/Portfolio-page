@@ -83,12 +83,20 @@ const frontendProjects = {
     "frontend_img/webshop/final2.png"
   ],
   "summertoy-code":[
-    "frontend_img/summertoy/code1.png",
-    "frontend_img/summertoy/code2.png"],
-    
+    "frontend_img/summertoys/pic_one.png",
+    "frontend_img/summertoys/pic_two.png",
+    "frontend_img/summertoys/pic_three.png",
+    "frontend_img/summertoys/pic_four.png",
+    "frontend_img/summertoys/pic_five.png",
+  ],
   "summertoy-final":[
-    "frontend_img/summertoy/final1.png",
-    "frontend_img/summertoy/final2.png"
+    "frontend_img/summertoys/startpage.png",
+    "frontend_img/summertoys/productpage.png",
+    "frontend_img/summertoys/cart.png",
+    "frontend_img/summertoys/adminlogin.png",
+    "frontend_img/summertoys/edit.png",
+    "frontend_img/summertoys/newproduct.png"
+    
   ],
   "stopwatch-code":[
     "frontend_img/stopwatch/code1.png",
