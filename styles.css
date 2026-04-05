@@ -556,6 +556,11 @@ border-radius: 50%;
     transition: all 0.3s ease;
 }
 
+a {
+    text-decoration: underline;
+    color: #ffb84d;
+}
+
 .menu a:hover {
     background-color: #ffb84d;
     color: #12002f;

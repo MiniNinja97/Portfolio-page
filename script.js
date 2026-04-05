@@ -58,7 +58,19 @@ const caseStudies = {
     'grow_img/Group 25.jpg','grow_img/Group 26.jpg','grow_img/Group 27.jpg',
     'grow_img/Group 28.jpg','grow_img/Group 29.jpg','grow_img/Group 30.jpg',
     'grow_img/Group 31.jpg','grow_img/Group 32.jpg'
-  ]
+  ],
+
+  projectDelta: [
+    "frontend_img/summercasestudy/Group 8.png",
+    "frontend_img/summercasestudy/Group 9.png",
+    "frontend_img/summercasestudy/Group 10.png",
+    "frontend_img/summercasestudy/Group 11.png",
+    "frontend_img/summercasestudy/Group 12.png",
+    "frontend_img/summercasestudy/Group 13.png",
+    "frontend_img/summercasestudy/Group 14.png",
+    "frontend_img/summercasestudy/Group 15.png",
+    "frontend_img/summercasestudy/Group 16.png",
+    "frontend_img/summercasestudy/Group 17.png" ],
 };
 
 const frontendProjects = {
