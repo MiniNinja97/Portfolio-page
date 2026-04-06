@@ -13,7 +13,6 @@ const fadeElements = document.querySelectorAll('section, h1, h2, h3, p, ul, li, 
 
 window.addEventListener('scroll', () => {
   const windowHeight = window.innerHeight;
-  const fadeStart = windowHeight;
 
   fadeElements.forEach(el => {
     const rect = el.getBoundingClientRect();
@@ -29,11 +28,16 @@ window.addEventListener('scroll', () => {
 });
 
 
+// MODAL (MAIN)
 const modal = document.getElementById('case-modal');
 const modalImg = document.getElementById('modal-img');
+const modalText = document.getElementById("modal-text");
+
 const closeBtn = document.querySelector('.close-btn');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
+
+const openExperience = document.getElementById("open-experience");
 
 const caseStudies = {
   projectAlpha: [
@@ -58,127 +62,129 @@ const caseStudies = {
     'grow_img/Group 25.jpg','grow_img/Group 26.jpg','grow_img/Group 27.jpg',
     'grow_img/Group 28.jpg','grow_img/Group 29.jpg','grow_img/Group 30.jpg',
     'grow_img/Group 31.jpg','grow_img/Group 32.jpg'
+  ],
+  projectDelta: [
+    
   ]
+
 };
 
 const frontendProjects = {
-
   "aGameObviously-code":[
-    "frontend_img/game/1.png",
-    "frontend_img/game/2.png",
-    "frontend_img/game/3.png",
-    "frontend_img/game/4.png",
-    "frontend_img/game/5.png",
-    "frontend_img/game/6.png",
-    "frontend_img/game/7.png",
-    "frontend_img/game/8.png",
-    "frontend_img/game/9.png",
-    "frontend_img/game/10.png",
-    "frontend_img/game/11.png",
-    "frontend_img/game/12.png",
-    "frontend_img/game/13.png",
-    "frontend_img/game/14.png",
-    "frontend_img/game/15.png",
-    
+    "frontend_img/game/1.png","frontend_img/game/2.png","frontend_img/game/3.png",
+    "frontend_img/game/4.png","frontend_img/game/5.png","frontend_img/game/6.png",
+    "frontend_img/game/7.png","frontend_img/game/8.png","frontend_img/game/9.png",
+    "frontend_img/game/10.png","frontend_img/game/11.png","frontend_img/game/12.png",
+    "frontend_img/game/13.png","frontend_img/game/14.png","frontend_img/game/15.png",
   ],
 
   "aGameObviously-final":[
-    "frontend_img/game/pic1.png",
-    "frontend_img/game/pic2.png",
-    "frontend_img/game/pic3.png",
-    "frontend_img/game/pic4.png",
-    "frontend_img/game/pic5.png",
-    "frontend_img/game/pic6.png",
-    
+    "frontend_img/game/pic1.png","frontend_img/game/pic2.png","frontend_img/game/pic3.png",
+    "frontend_img/game/pic4.png","frontend_img/game/pic5.png","frontend_img/game/pic6.png",
   ],
 
   "chappy-code":[
-    "frontend_img/chappy/1.png",
-    "frontend_img/chappy/2.png",
-    "frontend_img/chappy/3.png",
-    "frontend_img/chappy/4.png",
-    "frontend_img/chappy/5.png",
-    "frontend_img/chappy/6.png",
-    "frontend_img/chappy/7.png",
-    "frontend_img/chappy/8.png",
-    "frontend_img/chappy/9.png",
+    "frontend_img/chappy/1.png","frontend_img/chappy/2.png","frontend_img/chappy/3.png",
+    "frontend_img/chappy/4.png","frontend_img/chappy/5.png","frontend_img/chappy/6.png",
+    "frontend_img/chappy/7.png","frontend_img/chappy/8.png","frontend_img/chappy/9.png",
     "frontend_img/chappy/10.png",
-    
   ],
 
   "chappy-final":[
-    "frontend_img/chappy/11.png",
-    "frontend_img/chappy/12.png",
-    "frontend_img/chappy/13.png",
+    "frontend_img/chappy/11.png","frontend_img/chappy/12.png","frontend_img/chappy/13.png",
   ],
+
   "summertoy-code":[
-    "frontend_img/summertoys/pic_one.png",
-    "frontend_img/summertoys/pic_two.png",
-    "frontend_img/summertoys/pic_three.png",
-    "frontend_img/summertoys/pic_four.png",
+    "frontend_img/summertoys/pic_one.png","frontend_img/summertoys/pic_two.png",
+    "frontend_img/summertoys/pic_three.png","frontend_img/summertoys/pic_four.png",
     "frontend_img/summertoys/pic_five.png",
   ],
+
   "summertoy-final":[
-    "frontend_img/summertoys/startpage.png",
-    "frontend_img/summertoys/productpage.png",
-    "frontend_img/summertoys/cart.png",
-    "frontend_img/summertoys/adminlogin.png",
-    "frontend_img/summertoys/edit.png",
-    "frontend_img/summertoys/newproduct.png"
-    
+    "frontend_img/summertoys/startpage.png","frontend_img/summertoys/productpage.png",
+    "frontend_img/summertoys/cart.png","frontend_img/summertoys/adminlogin.png",
+    "frontend_img/summertoys/edit.png","frontend_img/summertoys/newproduct.png"
   ],
+
   "stopwatch-code":[
-    "frontend_img/stopwatch/stop_one.png",
-    "frontend_img/stopwatch/stop_two.png",
-    "frontend_img/stopwatch/stop_three.png",
-    "frontend_img/stopwatch/stop_four.png",
+    "frontend_img/stopwatch/stop_one.png","frontend_img/stopwatch/stop_two.png",
+    "frontend_img/stopwatch/stop_three.png","frontend_img/stopwatch/stop_four.png",
     "frontend_img/stopwatch/stop_five.png",
   ],
 
   "stopwatch-final":[
-    "frontend_img/stopwatch/stop_six.png",
-    "frontend_img/stopwatch/stop_seven.png",
-    
+    "frontend_img/stopwatch/stop_six.png","frontend_img/stopwatch/stop_seven.png",
   ],
 
-    "foodTruck-code":[
-      "frontend_img/foodtruck/1.png",
-      "frontend_img/foodtruck/2.png",
-      "frontend_img/foodtruck/3.png",
-      "frontend_img/foodtruck/4.png",
-      "frontend_img/foodtruck/5.png",
-      "frontend_img/foodtruck/6.png",
-      "frontend_img/foodtruck/7.png",
-    
-    ],
-    "foodTruck-final":[
-      "frontend_img/foodtruck/foodone.png",
-      "frontend_img/foodtruck/foodtwo.png",
-      "frontend_img/foodtruck/foodthree.png",
-      "frontend_img/foodtruck/foodfour.png",
-      "frontend_img/foodtruck/foodfive.png",
-    ],
+  "foodTruck-code":[
+    "frontend_img/foodtruck/1.png","frontend_img/foodtruck/2.png",
+    "frontend_img/foodtruck/3.png","frontend_img/foodtruck/4.png",
+    "frontend_img/foodtruck/5.png","frontend_img/foodtruck/6.png",
+    "frontend_img/foodtruck/7.png",
+  ],
 
+  "foodTruck-final":[
+    "frontend_img/foodtruck/foodone.png","frontend_img/foodtruck/foodtwo.png",
+    "frontend_img/foodtruck/foodthree.png","frontend_img/foodtruck/foodfour.png",
+    "frontend_img/foodtruck/foodfive.png",
+  ],
 };
 
 let currentImages = [];
 let currentIndex = 0;
 
-
 function disableScroll() { document.body.style.overflow = 'hidden'; }
 function enableScroll() { document.body.style.overflow = ''; }
 
 
+// // EXPERIENCE 
+// openExperience.addEventListener("click", (e) => {
+//   e.preventDefault();
+
+//   modal.style.display = "block";
+//   disableScroll();
+
+//   modalImg.style.display = "none";
+//   modalText.style.display = "block";
+
+//   prevBtn.style.display = "none";
+//   nextBtn.style.display = "none";
+
+//   modalText.innerHTML = `
+//     <h2>Experience</h2>
+
+//     <h3>Work</h3>
+//     <p><strong>Frontend Developer Intern</strong></p>
+//     <p>Worked with React, APIs and UI implementation.</p>
+
+//     <p><strong>UX/UI Designer</strong></p>
+//     <p>Worked with Figma, usability and user flows.</p>
+
+//     <h3>Education</h3>
+//     <p><strong>Frontend Development</strong></p>
+//     <p>Learned React, TypeScript, APIs and fullstack basics.</p>
+
+//     <p><strong>UX/UI Design – Beetroot Academy</strong></p>
+//     <p>Focused on user-centered design and prototyping.</p>
+//   `;
+// });
+
+
+// CASE STUDIES
 document.querySelectorAll('.case-link').forEach(link => {
   link.addEventListener('click', () => {
     const caseId = link.dataset.case;
+
     currentImages = caseStudies[caseId];
     currentIndex = 0;
+
     modalImg.src = currentImages[currentIndex];
     modal.style.display = 'block';
     disableScroll();
 
-    
+    modalText.style.display = "none";
+    modalImg.style.display = "block";
+
     if(currentImages.length > 1) {
       prevBtn.style.display = 'block';
       nextBtn.style.display = 'block';
@@ -190,12 +196,38 @@ document.querySelectorAll('.case-link').forEach(link => {
 });
 
 
+// FRONTEND PROJECTS
+document.querySelectorAll('.frontend-link').forEach(button => {
+  button.addEventListener('click', () => {
+    const projectId = button.dataset.project;
+
+    currentImages = frontendProjects[projectId];
+    currentIndex = 0;
+
+    modalImg.src = currentImages[currentIndex];
+    modal.style.display = 'block';
+    disableScroll();
+
+    modalText.style.display = "none";
+    modalImg.style.display = "block";
+
+    if(currentImages.length > 1){
+      prevBtn.style.display = 'block';
+      nextBtn.style.display = 'block';
+    } else {
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+    }
+  });
+});
+
+
+// NAVIGATION
 nextBtn.addEventListener('click', () => {
   currentIndex++;
   if (currentIndex >= currentImages.length) currentIndex = 0;
   modalImg.src = currentImages[currentIndex];
 });
-
 
 prevBtn.addEventListener('click', () => {
   currentIndex--;
@@ -204,11 +236,11 @@ prevBtn.addEventListener('click', () => {
 });
 
 
+// CLOSE
 closeBtn.addEventListener('click', () => {
   modal.style.display = 'none';
   enableScroll();
 });
-
 
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
@@ -217,50 +249,26 @@ window.addEventListener('click', (e) => {
   }
 });
 
-document.querySelectorAll('.frontend-link').forEach(button => {
 
-button.addEventListener('click', () => {
-
-const projectId = button.dataset.project;
-
-currentImages = frontendProjects[projectId];
-
-currentIndex = 0;
-
-modalImg.src = currentImages[currentIndex];
-
-modal.style.display = 'block';
-
-disableScroll();
-
-
-if(currentImages.length > 1){
-prevBtn.style.display = 'block';
-nextBtn.style.display = 'block';
-}else{
-prevBtn.style.display = 'none';
-nextBtn.style.display = 'none';
-}
-
-});
-
-});
-
-
+// DIPLOMAS
 document.querySelectorAll('.diploma-link').forEach(button => {
   button.addEventListener('click', () => {
     const diplomaSrc = button.dataset.diploma;
+
     modalImg.src = diplomaSrc;
     modal.style.display = 'block';
     disableScroll();
 
-   
+    modalText.style.display = "none";
+    modalImg.style.display = "block";
+
     prevBtn.style.display = 'none';
     nextBtn.style.display = 'none';
   });
 });
 
 
+// VIDEO MODAL 
 const videoModal = document.getElementById("videoModal");
 const modalVideo = document.getElementById("modalVideo");
 const closeVideoBtn = videoModal.querySelector(".close");
@@ -291,5 +299,47 @@ videoModal.addEventListener('click', (e) => {
   }
 });
 
+// EXPERIENCE MODAL
+const experienceBtn = document.getElementById("open-experience");
+const experienceModal = document.getElementById("experience-modal");
+const closeExperienceBtn = experienceModal.querySelector(".close-experience");
 
+experienceBtn.addEventListener("click", () => {
+  experienceModal.style.display = "flex"; // bara denna modal
+  disableScroll();
+});
 
+closeExperienceBtn.addEventListener("click", () => {
+  experienceModal.style.display = "none";
+  enableScroll();
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === experienceModal) {
+    experienceModal.style.display = "none";
+    enableScroll();
+  }
+});
+
+// EDUCATION MODAL
+const educationBtn = document.getElementById("open-education");
+const educationModal = document.getElementById("education-modal");
+const closeEducationBtn = educationModal.querySelector(".close-education");
+
+educationBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  educationModal.style.display = "flex";
+  disableScroll();
+});
+
+closeEducationBtn.addEventListener("click", () => {
+  educationModal.style.display = "none";
+  enableScroll();
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === educationModal) {
+    educationModal.style.display = "none";
+    enableScroll();
+  }
+});
