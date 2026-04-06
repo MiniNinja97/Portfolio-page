@@ -100,6 +100,7 @@
 <section id="ux" class="section ux">
     <h2>UX/UI PORTFOLIO</h2>
 
+<<<q<<<< HEAD
     <div id="case-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -120,6 +121,92 @@
         </div>
         <div class="portfolio-image">
             <img src="ux_img/Group 259.jpg" alt="Project Alpha thumbnail">
+=======
+    
+    <!-- <div id="case-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button> -->
+
+        <!-- <div class="case-body">
+            <img id="modal-img" src="" alt="Case Study Image">
+        </div> -->
+    <!-- </div>
+</div> -->
+    <!-- </div> -->
+    <div class="portfolio-item">
+    <div class="">
+        <h3>Inter Cat</h3>
+        <p>Area: UX/UI design</p>
+        <p>Inter Cat is a UX/UI e-commerce project focused on creating a user-friendly experience for buying cat food. As my first design project, it explores both desktop and mobile views with a strong emphasis on customer needs and intuitive navigation.</p>
+        <a href="https://www.figma.com/proto/ENEOt9ErrCvi0yBU4c3ujq/Portfolio-InterCat?node-id=476-2044&t=7ocKfCCZJWqsIUOF-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=476%3A2044&show-proto-sidebar=1" target="_blank">Ux-Prototype, flow 3 is desktop prototype and flow 1 mobile. </a>
+        <button class="case-link" data-case="projectAlpha">See case study</button>
+      
+    </div>
+    <div class="portfolio-image">
+        <img src="ux_img/Group 259.jpg" alt="Project Alpha thumbnail">
+    </div>
+</div>
+    <div class="portfolio-item">
+    <div class="">
+        <h3>Travel Sweden</h3>
+        <p>Area: UX/UI design</p>
+        <p>Travel App is a UX/UI mobile concept designed to help users discover personalized travel destinations across Sweden. The app focuses on accessibility and inclusivity, adapting suggestions based on individual needs such as disabilities, pets, or traveling with children. </p>
+        <button class="case-link" data-case="projectBeta">See case study</button>
+      
+    </div>
+    <div class="portfolio-image">
+        <img src="travel_img/Group 13914.jpg" alt="Project Beta thumbnail">
+    </div>
+</div>
+<div class="portfolio-item">
+  <div class="">
+      <h3>Grow More</h3>
+      <p>Area: UX/UI design</p>
+      <p>Grow More is a UX/UI mobile app that supports users in caring for their houseplants. It offers guidance on plant care, reminders for watering and repotting, and tips on optimal placement within the home.</p>
+      <a href="https://www.figma.com/proto/UuTreu2vha12Lyxfu8qcAR/Grow-More?node-id=53-995&t=uw2yJi5V9fVsDVdq-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A6&starting-point-node-id=53%3A995" target="_blank">See the ux-Prototype </a>
+      
+      <button class="case-link" data-case="projectGamma">See case study</button>
+    
+      <button class="video-link" data-video="video/behance_video_1080.mp4">Watch video</button>
+  </div>
+  <div class="portfolio-image">
+     
+      <img class="portfolio-video-thumb" src="video/videothumbnail.jpg" alt="Video Thumbnail">
+  </div>
+</div>
+<div class="portfolio-item">
+    <div class="">
+        <h3>Summer toy shop</h3>
+        <p>Area: UX/UI design anf FrontEnd </p>
+        <p>Summer Toys is a UX/UI and frontend project that began with a full design process in Figma before development. It focuses on creating a user-friendly e-commerce experience with a playful and vibrant feel.  </p>
+        <button class="case-link" data-case="projectDelta">See case study</button>
+      
+    </div>
+    <div class="portfolio-image">
+        <img src="frontend_img/summercasestudy/Group 8.png" alt="Project Delta thumbnail">
+    </div>
+</div>
+
+
+<div class="modal" id="videoModal">
+    <span class="close">&times;</span>
+    <video id="modalVideo" controls></video>
+</div>
+<div id="case-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+
+        <div class="case-body">
+            <img id="modal-img" src="" alt="Case Study Image">
+>>>>>>> 33f57bdb8ffbcb01694e607a3e538fbd5a9cdf84
         </div>
     </div>
 
@@ -153,23 +240,10 @@
         <h3>Chappy Chat App</h3>
         <p>Area: UX/UI design</p>
         <p>Brief: </p>
-        <button class="case-link" data-case="projectEpsilon">See case study</button>
+        <button class="case-link" data-case="projectDelta">See case study</button>
     </div>
     <div class="portfolio-image">
         <img src="chappy_img/thumbnail.jpg" alt="Chappy Chat App thumbnail">
-    </div>
-</div>
-
-<div class="portfolio-item">
-    <div class="">
-        <h3>Summer toy shop</h3>
-        <p>Area: UX/UI design anf FrontEnd </p>
-        <p>Summer Toys is a UX/UI and frontend project that began with a full design process in Figma before development. It focuses on creating a user-friendly e-commerce experience with a playful and vibrant feel.  </p>
-        <button class="case-link" data-case="projectDelta">See case study</button>
-      
-    </div>
-    <div class="portfolio-image">
-        <img src="frontend_img/summercasestudy/Group 8.png" alt="Project Delta thumbnail">
     </div>
 </div>
 
