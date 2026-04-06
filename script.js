@@ -15,6 +15,8 @@ window.addEventListener('scroll', () => {
   const windowHeight = window.innerHeight;
 
   fadeElements.forEach(el => {
+    if (el.closest('.modal')) return;
+
     const rect = el.getBoundingClientRect();
     if (rect.top >= windowHeight / 2) {
       let distance = rect.top - windowHeight / 2;
@@ -76,6 +78,18 @@ const caseStudies = {
     'frontend_img/summercasestudy/Group 17.png',
 
     
+  ],
+  projectEpsilon: [
+    'frontend_img/chappyappimg/Group 27.png',
+    'frontend_img/chappyappimg/Group 28.png',
+    'frontend_img/chappyappimg/Group 29.png',
+    'frontend_img/chappyappimg/Group 30.png',
+    'frontend_img/chappyappimg/Group 31.png',
+    'frontend_img/chappyappimg/Group 32.png',
+    'frontend_img/chappyappimg/Group 33.png',
+    'frontend_img/chappyappimg/Group 34.png',
+    'frontend_img/chappyappimg/Group 35.png',
+    'frontend_img/chappyappimg/Group 36.png'
   ]
 
 };
