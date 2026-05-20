@@ -1,13 +1,25 @@
-const portrait = document.querySelector(".portrait");
-const img = document.getElementById("portrait-img");
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
 
-portrait.addEventListener("mouseenter", () => {
-    img.src = "img/Profilbild.jpg";
-});
+let showingFirstSet = true;
 
-portrait.addEventListener("mouseleave", () => {
-    img.src = "img/mig1.jpg";
-});
+setInterval(() => {
+
+    if (showingFirstSet) {
+
+        img1.src = "img/Group 13893.jpg";
+        img2.src = "img/Screenshot from 2026-05-19 13-33-52 1.jpg";
+
+    } else {
+
+        img1.src = "img/mig1.jpg";
+        img2.src = "img/Profilbild.jpg";
+
+    }
+
+    showingFirstSet = !showingFirstSet;
+
+}, 5000);
 
 const fadeElements = document.querySelectorAll('section, h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
 

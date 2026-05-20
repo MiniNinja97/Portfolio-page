@@ -1,0 +1,53 @@
+/* ===== DIPLOMAS ===== */
+ 
+.diplomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 90%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+ 
+.diploma-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+ 
+.diploma-item h3 {
+    font-size: 1.5rem;
+    color: #ffeb99;
+    margin: 0;
+}
+ 
+.diploma-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+}
+ 
+.diploma-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+ 
+.diploma-item button.diploma-link {
+    background: none;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.diploma-item button.diploma-link:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}

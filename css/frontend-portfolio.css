@@ -1,0 +1,102 @@
+/* ===== FRONTEND PORTFOLIO ===== */
+ 
+.frontend-portfolio-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+ 
+.portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    gap: 0.5rem;
+}
+ 
+.portfolio-text a {
+    color: #ffb84d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+ 
+.portfolio-text a:hover {
+    color: #ffa500;
+}
+ 
+.portfolio-github {
+    text-align: center;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+ 
+.portfolio-github h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    color: #ffeb99;
+}
+ 
+.portfolio-github a {
+    text-decoration: none;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+ 
+.portfolio-github a:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}
+ 
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.8rem 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+ 
+.tech-list li {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #ffb84d;
+    border-radius: 4px;
+    color: #ffeb99;
+    background: rgba(255, 184, 77, 0.08);
+    transition: all 0.2s ease;
+}
+ 
+.portfolio-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+ 
+.frontend-link {
+    background: none;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ 
+.frontend-link:hover {
+    background: #ffb84d;
+    color: #12002f;
+}

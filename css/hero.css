@@ -1,0 +1,191 @@
+/* ===== HERO ===== */
+
+.hero {
+    position: relative;
+}
+
+.hero-name {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    margin-top: 8em;
+    margin-left: 2em;
+}
+
+.hero-name h1 {
+    font-size: 3rem;
+    color: #ffeb99;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-name p {
+    font-size: 1.5rem;
+    color: #ffeb99;
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.hero-name a {
+    text-decoration: none;
+    color: #ffb84d;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    display: block;
+    margin-top: 0.5rem;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.hero-name a:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}
+
+/* ===== HERO IMAGES ===== */
+
+.hero-center {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: 6rem;
+    margin-top: 10rem;
+}
+
+/* Gemensam styling för båda bilderna */
+.img-box {
+    position: absolute;
+    width: 20rem;
+    height: 22rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 1.5rem;
+    border: 2px solid #ffb84d;
+
+    box-shadow:
+        0 0.5rem 1rem rgba(0, 0, 0, 0.3),
+        0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.img-box img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Första bilden */
+.img-1 {
+    top: 0;
+    left: 4rem;
+    z-index: 1;
+}
+
+/* Andra bilden */
+.img-2 {
+    top: 11rem;
+    left: 17rem;
+    z-index: 2;
+}
+
+/* ===== MENU ===== */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.menu1,
+.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffb84d;
+    border: 2px solid #ffb84d;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffb84d;
+    color: #12002f;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .hero-name {
+        position: static;
+        margin: 0;
+    }
+
+    .hero-name h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-name p {
+        font-size: 1.2rem;
+    }
+
+    .hero-center {
+        width: 100%;
+        height: 42rem;
+        margin-top: 3rem;
+    }
+
+    .img-box {
+        width: 16rem;
+        height: 18rem;
+    }
+
+    .img-1 {
+        top: 0;
+        left: 1rem;
+    }
+
+    .img-2 {
+        top: 10rem;
+        left: 8rem;
+    }
+
+    .menu1,
+    .menu2 {
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,30 @@
+/* ===== SKILLS ===== */
+ 
+.skill {
+    font-size: 2.5em;
+}
+ 
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 4em;
+    padding-top: 1.5em;
+    margin-top: 4em;
+}
+ 
+/* Äldre .skills-grid behålls för bakåtkompatibilitet */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 4rem);
+    gap: 2rem;
+}
+ 
+/* --- Skills responsive --- */
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
