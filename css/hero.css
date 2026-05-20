@@ -32,7 +32,7 @@
 }
 
 .roles {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ffeb99;
     margin: 0.2rem 0;
 }
@@ -56,6 +56,10 @@
 .hero-name a:hover {
     background-color: #ffb84d;
     color: #12002f;
+}
+.hero-title {
+    height: 8rem; /* tillräckligt för att rymma båda raderna */
+    margin-bottom: 1rem;
 }
 
 #hero-name,
