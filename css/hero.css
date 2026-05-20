@@ -23,6 +23,12 @@
     color: #ffeb99;
     margin-bottom: 1rem;
 }
+.hero-name h3 {
+    font-size: 1.6rem;
+    color: #ffeb99;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
 
 .roles {
     font-size: 1.4rem;
@@ -49,6 +55,16 @@
 .hero-name a:hover {
     background-color: #ffb84d;
     color: #12002f;
+}
+
+#hero-name,
+#hero-roles,
+#hero-roles2 {
+    transition: opacity 0.8s ease;
+}
+.hidden {
+    opacity: 0;
+    pointer-events: none; /* så dolda element inte går att klicka på */
 }
 
 /* ===== GRID MENY ===== */
@@ -143,6 +159,8 @@
     color: #12002f;
 }
 
+
+
 /* ===== RESPONSIVE ===== */
 
 @media (max-width: 900px) {
@@ -165,7 +183,7 @@
         display: block;
         position: relative; /* ← håll absolut-positionering för bilderna */
         max-width: 400px;
-        margin: 0 auto;
+        margin: 1rem auto;
     }
     .img-box {
         position: absolute; 

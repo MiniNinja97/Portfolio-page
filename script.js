@@ -1,5 +1,8 @@
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
+const heroName = document.getElementById("hero-name");
+const heroRoles = document.getElementById("hero-roles");
+const heroRoles2 = document.getElementById("hero-roles2");
 
 let showingFirstSet = true;
 
@@ -10,16 +13,24 @@ setInterval(() => {
         img1.src = "img/Group 13893.jpg";
         img2.src = "img/Screenshot from 2026-05-19 13-33-52 1.jpg";
 
+           heroName.classList.add("hidden");
+        heroRoles.classList.remove("hidden");
+        heroRoles2.classList.remove("hidden");
+
     } else {
 
         img1.src = "img/mig1.jpg";
         img2.src = "img/Profilbild.jpg";
 
+       heroName.classList.remove("hidden");
+        heroRoles.classList.add("hidden");
+        heroRoles2.classList.add("hidden");
+
     }
 
     showingFirstSet = !showingFirstSet;
 
-}, 5000);
+}, 3000);
 
 const fadeElements = document.querySelectorAll('section:not(.hero), h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
 
