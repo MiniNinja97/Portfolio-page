@@ -21,7 +21,7 @@ setInterval(() => {
 
 }, 5000);
 
-const fadeElements = document.querySelectorAll('section, h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
+const fadeElements = document.querySelectorAll('section:not(.hero), h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
 
 window.addEventListener('scroll', () => {
   const windowHeight = window.innerHeight;

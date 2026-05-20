@@ -1,42 +1,49 @@
-/* ===== HERO ===== */
+/* ===== HERO LAYOUT ===== */
 
 .hero {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center; 
+     align-items: center; 
+    gap: 3rem;
+    padding: 4rem;
+    min-height: 100vh;
 }
 
+
+/* ===== VÄNSTER ===== */
+
 .hero-name {
-    position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
-    margin-top: 8em;
-    margin-left: 2em;
+    max-width: 30rem;
 }
 
 .hero-name h1 {
     font-size: 3rem;
     color: #ffeb99;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.roles {
+    font-size: 1.4rem;
+    color: #ffeb99;
+    margin: 0.2rem 0;
 }
 
 .hero-name p {
-    font-size: 1.5rem;
     color: #ffeb99;
-    margin: 0.25rem 0;
-    line-height: 1.4;
+    margin: 1rem 0;
 }
 
 .hero-name a {
+    display: inline-block;
+    margin: 0.4rem 0;
     text-decoration: none;
     color: #ffb84d;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
     border: 2px solid #ffb84d;
-    border-radius: 6px;
-    display: block;
-    margin-top: 0.5rem;
-    width: fit-content;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: 0.3s;
 }
 
 .hero-name a:hover {
@@ -44,60 +51,62 @@
     color: #12002f;
 }
 
-/* ===== HERO IMAGES ===== */
+/* ===== GRID MENY ===== */
+
+.hero-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-links a {
+    text-align: center;
+}
+
+/* ===== HÖGER BILDER ===== */
 
 .hero-center {
     position: relative;
     width: 40rem;
     height: 40rem;
-    margin-left: auto;
-    margin-right: 6rem;
-    margin-top: 10rem;
 }
 
-/* Gemensam styling för båda bilderna */
 .img-box {
     position: absolute;
-    width: 20rem;
-    height: 22rem;
-    overflow: hidden;
-    border-radius: 1.5rem;
 }
 
 .img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     border: 2px solid #ffb84d;
-
-    box-shadow:
-        0 0.5rem 1rem rgba(0, 0, 0, 0.3),
-        0 1rem 2rem rgba(0, 0, 0, 0.2);
-
-    transition:
-        transform 0.5s ease,
-        opacity 0.5s ease;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    transition: 0.4s;
+     margin-left: 2em; 
 }
 
-.img-box img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/* Första bilden */
+/* Övre bild */
 .img-1 {
+    width: 18rem;
+    height: 20rem;
     top: 0;
     left: 4rem;
     z-index: 1;
 }
 
-/* Andra bilden */
+/* Nedre bild */
 .img-2 {
-    top: 11rem;
-    left: 17rem;
+    width: 24rem;
+    height: 26rem;
+    top: 10rem;
+    left: 16rem;
     z-index: 2;
+}
+
+.img-box img:hover {
+    transform: scale(1.03);
 }
 
 /* ===== MENU ===== */
@@ -136,56 +145,41 @@
 
 /* ===== RESPONSIVE ===== */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    .hero {
-        display: flex;
-        flex-direction: column;
+    .hero-center {
+         flex-direction: column; 
+        padding: 2rem 1rem;
+        gap: 2rem;
         align-items: center;
-        text-align: center;
-        padding: 2rem;
     }
 
     .hero-name {
-        position: static;
-        margin: 0;
-    }
-
-    .hero-name h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-name p {
-        font-size: 1.2rem;
+        max-width: 100%;
     }
 
     .hero-center {
+         position: static;
         width: 100%;
-        height: 42rem;
-        margin-top: 3rem;
+        height: 22rem; /* ← ge höjd för överlappande bilder */
+        display: block;
+        position: relative; /* ← håll absolut-positionering för bilderna */
+        max-width: 400px;
+        margin: 0 auto;
     }
-
     .img-box {
-        width: 16rem;
-        height: 18rem;
+        position: absolute; 
     }
 
-    .img-1 {
-        top: 0;
-        left: 1rem;
-    }
-
+    .img-1,
     .img-2 {
-        top: 10rem;
-        left: 8rem;
+        position: static;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+
+        display: block;
+        margin: 0 auto;
     }
 
-    .menu1,
-    .menu2 {
-        flex-direction: column;
-    }
-
-    .menu a {
-        font-size: 1.2rem;
-    }
-}
+ }
