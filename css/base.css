@@ -46,13 +46,20 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    color: black;
+    background: transparent;
+    color: #ffb84d;
+    border: 2px solid #ffb84d;
     border-radius: 50%;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.back-to-top:hover {
+    background: #ffb84d;
+    color: #12002f;
 }
  
 .fade-bottom {

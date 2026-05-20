@@ -63,6 +63,7 @@ window.addEventListener('scroll', () => {
 
   fadeElements.forEach(el => {
     if (el.closest('.modal')) return;
+    if (el.closest('.hero')) return;
 
     const rect = el.getBoundingClientRect();
     if (rect.top >= windowHeight / 2) {
