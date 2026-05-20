@@ -16,6 +16,7 @@
 
 .hero-name {
     max-width: 30rem;
+    
 }
 
 .hero-name h1 {
@@ -61,11 +62,12 @@
 #hero-roles,
 #hero-roles2 {
     transition: opacity 0.8s ease;
+    
 }
-.hidden {
-    opacity: 0;
-    pointer-events: none; /* så dolda element inte går att klicka på */
+#img1, #img2 {
+    transition: opacity 0.8s ease;
 }
+
 
 /* ===== GRID MENY ===== */
 

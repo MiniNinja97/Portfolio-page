@@ -9,28 +9,52 @@ let showingFirstSet = true;
 setInterval(() => {
 
     if (showingFirstSet) {
+        img1.style.opacity = "0";
+        img2.style.opacity = "0";
+        heroName.style.opacity = "0";
 
-        img1.src = "img/Group 13893.jpg";
-        img2.src = "img/Screenshot from 2026-05-19 13-33-52 1.jpg";
+        setTimeout(() => {
+            img1.src = "img/Group 13893.jpg";
+            img2.src = "img/Screenshot from 2026-05-19 13-33-52 1.jpg";
+            heroName.style.display = "none";
 
-           heroName.classList.add("hidden");
-        heroRoles.classList.remove("hidden");
-        heroRoles2.classList.remove("hidden");
+            heroRoles.style.display = "block";
+            heroRoles2.style.display = "block";
+
+            setTimeout(() => {
+                img1.style.opacity = "1";
+                img2.style.opacity = "1";
+                heroRoles.style.opacity = "1";
+                heroRoles2.style.opacity = "1";
+            }, 10);
+        }, 800);
 
     } else {
+        img1.style.opacity = "0";
+        img2.style.opacity = "0";
+        heroRoles.style.opacity = "0";
+        heroRoles2.style.opacity = "0";
 
-        img1.src = "img/mig1.jpg";
-        img2.src = "img/Profilbild.jpg";
+        setTimeout(() => {
+            img1.src = "img/mig1.jpg";
+            img2.src = "img/Profilbild.jpg";
+            heroRoles.style.display = "none";
+            heroRoles2.style.display = "none";
 
-       heroName.classList.remove("hidden");
-        heroRoles.classList.add("hidden");
-        heroRoles2.classList.add("hidden");
-
+            setTimeout(() => {
+                heroName.style.display = "block";
+                setTimeout(() => {
+                    img1.style.opacity = "1";
+                    img2.style.opacity = "1";
+                    heroName.style.opacity = "1";
+                }, 10);
+            }, 10);
+        }, 800);
     }
 
     showingFirstSet = !showingFirstSet;
 
-}, 3000);
+}, 4000);
 
 const fadeElements = document.querySelectorAll('section:not(.hero), h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
 
