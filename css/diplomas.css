@@ -51,3 +51,14 @@
     background-color: #ffb84d;
     color: #12002f;
 }
+
+.resume-image {
+    height: auto;
+
+    max-width: 100%;
+
+    margin-bottom: 10em;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}

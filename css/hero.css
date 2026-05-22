@@ -34,8 +34,11 @@
 .roles {
     font-size: 1.5rem;
     color: #ffeb99;
-    margin: 0.2rem 0;
+    margin-bottom: 2em;
+    
 }
+
+
 
 .hero-name p {
     color: #ffeb99;
@@ -58,7 +61,7 @@
     color: #12002f;
 }
 .hero-title {
-    height: 8rem; /* tillräckligt för att rymma båda raderna */
+    min-height: 8rem; /* tillräckligt för att rymma båda raderna */
     margin-bottom: 1rem;
 }
 
