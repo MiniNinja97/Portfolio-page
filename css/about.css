@@ -1,5 +1,5 @@
 /* ===== ABOUT ===== */
- 
+
 section {
     min-height: 100vh;
     display: flex;
@@ -7,24 +7,114 @@ section {
     align-items: center;
     padding-top: 4rem;
 }
- 
-.about {
+
+
+/* MAIN ABOUT SECTION */
+
+.about-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2em;
+    gap: 2em;
+
+   margin: 4em; 
+   padding: 2em;
 }
- 
-.about p,
-.about ul {
+
+
+/* EACH ROW */
+
+.about-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 4rem;
+
+    width: 100%;
+}
+
+
+/* SECOND BLOCK REVERSED */
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* TEXT */
+
+.about-text {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.about-text p,
+.about-text ul {
     max-width: 40em;
     text-align: left;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 1.2em;
-    margin-bottom: 1em;
+   
+}
+
+.about-text ul {
+    list-style-type: disc;
     padding-left: 1em;
 }
- 
-.about ul {
-    list-style-type: disc;
+
+
+/* IMAGE AREA */
+
+.image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    max-width: 500px;   /* Lägg till – begränsar containern */
+    overflow: hidden;   /* Lägg till – klipper allt som sticker ut */
+    margin-bottom: 0;
+}
+
+.fade-image {
+    position: absolute;
+    width: 100%;        /* Nu 100% av max 500px-containern */
+    max-width: unset;   /* Ta bort den gamla max-width */
+    height: 100%;       /* Fyll hela containerns höjd */
+    object-fit: cover;  /* Beskär snyggt utan att stretcha */
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-image.active {
+    opacity: 1;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .about-block,
+    .reverse {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        min-height: 350px;
+        margin-bottom: 2em; /* Var 16em – alldeles för mycket på mobil */
+    }
+
+    .about-text p,
+    .about-text ul {
+        font-size: 1rem;
+        margin-bottom: 1.5em; /* Minska även textmarginalerna på mobil */
+        margin-top: 1.5em;
+    }
+
 }

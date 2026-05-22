@@ -36,7 +36,7 @@ setInterval(() => {
         heroRoles2.style.opacity = "0";
 
         setTimeout(() => {
-            img1.src = "img/mig1.jpg";
+            img1.src = "img/edingburg2.jpg";
             img2.src = "img/Profilbild.jpg";
             heroRoles.style.display = "none";
             heroRoles2.style.display = "none";
@@ -54,7 +54,30 @@ setInterval(() => {
 
     showingFirstSet = !showingFirstSet;
 
-}, 4000);
+}, 3500);
+
+const containers = document.querySelectorAll('.image-container');
+
+containers.forEach((container) => {
+
+    const images = container.querySelectorAll('.fade-image');
+
+    let current = 0;
+
+    setInterval(() => {
+
+        // ta bort active från nuvarande bild
+        images[current].classList.remove('active');
+
+        // gå till nästa bild
+        current = (current + 1) % images.length;
+
+        // lägg till active på nästa bild
+        images[current].classList.add('active');
+
+    }, 4000); // ändrar bild var 4:e sekund
+
+});
 
 const fadeElements = document.querySelectorAll('section:not(.hero), h1, h2, h3, p, ul, li, img, .portrait, .menu, .splitscreen');
 
@@ -64,6 +87,7 @@ window.addEventListener('scroll', () => {
   fadeElements.forEach(el => {
     if (el.closest('.modal')) return;
     if (el.closest('.hero')) return;
+    if (el.classList.contains('fade-image')) return;
 
     const rect = el.getBoundingClientRect();
     if (rect.top >= windowHeight / 2) {
